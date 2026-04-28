@@ -353,8 +353,6 @@
             <option value="game development">Game Development</option>
             <option value="web development">Web Development</option>
             <option value="mobile development">Mobile Development</option>
-            <option value="ui/ux">UI/UX</option>
-            <option value="other">Other</option>
           </select>
 
           <select id="languageFilter">
@@ -363,8 +361,6 @@
             <option value="c++">C++</option>
             <option value="javascript">JavaScript</option>
             <option value="typescript">TypeScript</option>
-            <option value="kotlin">Kotlin</option>
-            <option value="other">Other</option>
           </select>
         </div>
 
@@ -390,6 +386,61 @@
                     <div class="project-links">
                         <a class="project-link" href="https://www.youtube.com/watch?v=UUokJhqqLmg">Gameplay Video</a>
                         <a class="project-link" href="https://yeison-munoz.itch.io/monster-route">Itch.io</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card project-card" data-discipline="web development" data-language="typescript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
+                <img src="./src/telemetry.png" class="project-image" />
+                <div class="project-body">
+                    <span class="badge">Featured Project</span>
+                    <h3 style="margin-top: 12px;">Game Telemetry System (Unity + React)</h3>
+                    <p style="color: var(--muted); margin-top: 10px;">
+                        Full-stack telemetry system that collects and visualizes gameplay data from a Unity WebGL game.
+                        The project integrates Unity, Firebase, React, and Python to track player behavior, generate analytics,
+                        and display real-time graphs and leaderboards through a web interface with admin and player roles.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Unity WebGL</span>
+                        <span>Firebase</span>
+                        <span>Python</span>
+                        <span>Data Visualization</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a class="project-link" href="https://yeyeymc.github.io/Pipelines_GameWebApp/">Live Demo</a>
+                        <a class="project-link" href="https://github.com/YeyeyMC/Pipelines_GameWebApp.git">GitHub</a>
+                        <a class="project-link" href="https://youtu.be/e4a6PlRR_fs">Gameplay Video</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card project-card" data-discipline="game development" data-language="lua" data-search="roblox multiplayer lua gameplay systems minigames virtual experience brandcade">
+                <img src="./src/brandcade.png" class="project-image" />
+                <div class="project-body">
+                    <span class="badge">Professional Experience</span>
+                    <h3 style="margin-top: 12px;">Brandcade (Roblox Experience)</h3>
+                    <p style="color: var(--muted); margin-top: 10px;">
+                        Multiplayer Roblox experience developed as part of a professional collaboration with KaraOkulta (Amber Studio).
+                        The project features a virtual shopping-mall environment with interactive minigames and social gameplay systems.
+
+                        Contributed to gameplay implementation and interactive systems using Lua scripting within Roblox Studio,
+                        working within an existing production environment.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Roblox</span>
+                        <span>Lua</span>
+                        <span>Multiplayer</span>
+                        <span>Minigames</span>
+                        <span>Live Project</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a class="project-link" href="https://www.roblox.com/es/games/14983485047/BRANDCADE-JETPACK-SIMULATOR">Roblox Experience</a>
+                        <a class="project-link" href="https://linktr.ee/BRANDCADE_KO?">Brandcade Links</a>
                     </div>
                 </div>
             </article>
@@ -472,33 +523,6 @@
                 </div>
             </article>
 
-            <article class="card project-card" data-discipline="web development" data-language="javascript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
-                <img src="./src/telemetry.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Featured Project</span>
-                    <h3 style="margin-top: 12px;">Game Telemetry System (Unity + React)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Full-stack telemetry system that collects and visualizes gameplay data from a Unity WebGL game.
-                        The project integrates Unity, Firebase, React, and Python to track player behavior, generate analytics,
-                        and display real-time graphs and leaderboards through a web interface with admin and player roles.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Unity WebGL</span>
-                        <span>Firebase</span>
-                        <span>Python</span>
-                        <span>Data Visualization</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://yeyeymc.github.io/Pipelines_GameWebApp/">Live Demo</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/Pipelines_GameWebApp.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/e4a6PlRR_fs">Gameplay Video</a>
-                    </div>
-                </div>
-            </article>
-
             <article class="card project-card" data-discipline="game development" data-language="c#" data-search="unity firebase authentication leaderboard webgl clicker game backend">
                 <img src="./src/cookie.png" class="project-image" />
                 <div class="project-body">
@@ -553,7 +577,7 @@
 
             <!--missing-->
             <article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
-                <div class="project-image">Multiplayer Tanks Screenshot</div>
+                <img src="./src/tanks.png" class="project-image" />
                 <div class="project-body">
                     <span class="badge">Systems Project</span>
                     <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
@@ -570,8 +594,8 @@
                     </div>
 
                     <div class="project-links">
-                        <a class="project-link" href="#">GitHub</a>
-                        <a class="project-link" href="#">Gameplay Video</a>
+                        <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
+                        <a class="project-link" href="https://youtu.be/U57NMf9c3gk">Gameplay Video</a>
                     </div>
                 </div>
             </article>
@@ -624,28 +648,30 @@
                 </div>
             </article>
 
+
+
             <!--<article class="card project-card" data-discipline="mobile development" data-language="kotlin" data-search="android kotlin task manager mobile app crud">
-                <div class="project-image">Task Manager App</div>
-                <div class="project-body">
-                    <span class="badge">Mobile</span>
-                    <h3 style="margin-top: 12px;">Task Manager App (Android)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Android application built using Kotlin in Android Studio, focused on task management functionality.
-                        Implements CRUD operations, UI navigation, and structured mobile application architecture.
-                    </p>
+        <div class="project-image">Task Manager App</div>
+        <div class="project-body">
+            <span class="badge">Mobile</span>
+            <h3 style="margin-top: 12px;">Task Manager App (Android)</h3>
+            <p style="color: var(--muted); margin-top: 10px;">
+                Android application built using Kotlin in Android Studio, focused on task management functionality.
+                Implements CRUD operations, UI navigation, and structured mobile application architecture.
+            </p>
 
-                    <div class="project-tags">
-                        <span>Kotlin</span>
-                        <span>Android</span>
-                        <span>Mobile Development</span>
-                        <span>CRUD</span>
-                    </div>
+            <div class="project-tags">
+                <span>Kotlin</span>
+                <span>Android</span>
+                <span>Mobile Development</span>
+                <span>CRUD</span>
+            </div>
 
-                    <div class="project-links">
-                        <a class="project-link" href="#">GitHub</a>
-                    </div>
-                </div>
-            </article>-->
+            <div class="project-links">
+                <a class="project-link" href="#">GitHub</a>
+            </div>
+        </div>
+    </article>-->
 
         </div>
 
