@@ -22,732 +22,758 @@
   </header>
 
   <main>
-    <!-- ABOUT / INTRO -->
-    <section id="about" class="hero">
-      <div class="container hero-grid">
-          <div class="card hero-content">
-              <span class="badge">Personal Portfolio</span>
-              <h1>Hello, I'm Yeison Munoz!</h1>
-              <p>
-                  I am a Software Developer currently studying at Vancouver Film School, with a strong focus on gameplay systems, C++ and C#, and interactive application development. I combine a technical foundation in programming with hands-on experience building games in Unity and working on structured systems such as gameplay mechanics, UI, and architecture.
-              </p>
-              <p>
-                  My goal is to grow into a highly capable developer who can contribute to real production environments, while creating meaningful and polished interactive experiences.
-              </p>
-              <p>
-                  I am a Software Developer currently studying at Vancouver Film School, with a strong focus on gameplay systems, C++ and C#, and interactive application development. I combine a technical foundation in programming with hands-on experience building games in Unity and working on structured systems such as gameplay mechanics, UI, and architecture
-              </p>
+      <!-- ABOUT / INTRO -->
+      <section id="about" class="hero">
+          <div class="container hero-grid">
+              <div class="card hero-content">
+                  <span class="badge">Personal Portfolio</span>
+                  <h1>Yeison Munoz</h1>
+                  <p style="font-size: 20px;">
+                      Software Engineer building polished and maintainable products across Games, Web, and Mobile. 
+                      I develop gameplay systems, responsive applications, and end-to-end features involving APIs, authentication, 
+                      databases, AI, and multiplayer.
+                  </p>
 
-              <div class="hero-meta">
-                  <span>Software Developer</span>
-                  <span>Vancouver, Canada</span>
-                  <span>Games - Web - Mobile - Engine</span>
+                  <div class="hero-meta">
+                      <span>Software Developer</span>
+                      <span>Vancouver, Canada</span>
+                      <span>Games - Web - Mobile</span>
+                  </div>
+              </div>
+
+              <div class="card hero-photo">
+                  <div class="photo-placeholder">
+                      <div>
+                          <img src="src/profilephoto.jpeg" />
+                      </div>
+                  </div>
               </div>
           </div>
+      </section>
 
-        <div class="card hero-photo">
-          <div class="photo-placeholder">
-            <div>
-              <img src="src/profilephoto.jpg"/>
-            </div>
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Projects</h2>
+              </div>
+
+              <div class="project-controls">
+                  <input type="text" id="searchInput" placeholder="Search by project name or keyword" />
+
+                  <select id="disciplineFilter">
+                      <option value="all">All Disciplines</option>
+                      <option value="game development">Game Development</option>
+                      <option value="web development">Web Development</option>
+                      <option value="mobile development">Mobile Development</option>
+                  </select>
+
+                  <select id="languageFilter">
+                      <option value="all">All Languages</option>
+                      <option value="c#">C#</option>
+                      <option value="c++">C++</option>
+                      <option value="javascript">JavaScript</option>
+                      <option value="typescript">TypeScript</option>
+                      <!--<option value="kotlin">Kotlin</option>-->
+                  </select>
+              </div>
+
+              <div class="projects-grid" id="projectsGrid">
+                  <article class="card project-card" data-discipline="game development" data-language="c#" data-search="monster route unity c# first person gameplay systems ai ui vfx team project">
+                      <img src="./src/monsterroute.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Featured Project</span>
+                          <h3 style="margin-top: 12px;">Monster Route</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Monster Route is a 3D first-person game developed in Unity as part of a team project at Vancouver Film School.
+                              I contributed to gameplay programming, enemy interactions, UI systems, VFX triggers, debugging, and modular gameplay architecture.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Game Development</span>
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>Gameplay Systems</span>
+                              <span>Team Project</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://www.youtube.com/watch?v=UUokJhqqLmg">Gameplay Video</a>
+                              <a class="project-link" href="https://yeison-munoz.itch.io/monster-route">Itch.io</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <article class="card project-card" data-discipline="web development" data-language="typescript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
+                      <img src="./src/telemetry.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Featured Project</span>
+                          <h3 style="margin-top: 12px;">Game Telemetry System (Unity + React)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Full-stack telemetry system that collects and visualizes gameplay data from a Unity WebGL game.
+                              The project integrates Unity, Firebase, React, and Python to track player behavior, generate analytics,
+                              and display real-time graphs and leaderboards through a web interface with admin and player roles.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>React</span>
+                              <span>Unity WebGL</span>
+                              <span>Firebase</span>
+                              <span>Python</span>
+                              <span>Data Visualization</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://yeyeymc.github.io/Pipelines_GameWebApp/">Live Demo</a>
+                              <a class="project-link" href="https://github.com/YeyeyMC/Pipelines_GameWebApp.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/e4a6PlRR_fs">Gameplay Video</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <article class="card project-card" data-discipline="mobile development" data-language="typescript" data-search="react native expo firebase authentication firestore sensors pedometer pokemon api mobile app">
+                      <img src="./src/pokewalk.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Mobile Project</span>
+                          <h3 style="margin-top: 12px;">PokeWalk (React Native + Expo)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              PokeWalk is a mobile application built with React Native and Expo that tracks the user's steps and unlocks Pokémon in a personal Pokédex based on walking progress.
+                              The app includes user authentication, persistent account-based data, external API integration, and real-time step tracking using Expo Sensors.
+                          </p>
+
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Each user can register or log in with Firebase Authentication, load their own progress from Firestore, track or pause step detection, and unlock Pokémon based on their activity.
+                              The project demonstrates mobile UI development, sensor access, API calls, Firebase integration, and persistent user data management.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>React Native</span>
+                              <span>Expo</span>
+                              <span>Firebase Auth</span>
+                              <span>Firestore</span>
+                              <span>Expo Sensors</span>
+                              <span>API Integration</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://snack.expo.dev/@yeisonmunoz/pg29_yeisonmunoz_mobiledev_pokewalk_a3">Expo Snack</a>
+                              <a class="project-link" href="https://github.com/YeyeyMC/PokeWalk.git">GitHub</a>
+                              <a class="project-link" href="https://youtube.com/shorts/15coSGb2KGc?feature=share">Demo Video</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <article class="card project-card" data-discipline="game development" data-language="lua" data-search="roblox multiplayer lua gameplay systems minigames virtual experience brandcade">
+                      <img src="./src/brandcade.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Professional Experience</span>
+                          <h3 style="margin-top: 12px;">Brandcade (Roblox Experience)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Multiplayer Roblox experience developed as part of a professional collaboration with KaraOkulta (Amber Studio).
+                              The project features a virtual shopping-mall environment with interactive minigames and social gameplay systems.
+
+                              Contributed to gameplay implementation and interactive systems using Lua scripting within Roblox Studio,
+                              working within an existing production environment.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Roblox</span>
+                              <span>Lua</span>
+                              <span>Multiplayer</span>
+                              <span>Minigames</span>
+                              <span>Live Project</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://www.roblox.com/es/games/14983485047/BRANDCADE-JETPACK-SIMULATOR">Roblox Experience</a>
+                              <a class="project-link" href="https://linktr.ee/BRANDCADE_KO?">Brandcade Links</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <article class="card project-card" data-discipline="game development" data-language="c#" data-search="mangrove rescue unity c# 2d top down environmental rescue enemy behavior level design">
+                      <img src="./src/magrove.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Project</span>
+                          <h3 style="margin-top: 12px;">Mangrove Rescue</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Mangrove Rescue is a 2D top-down Unity game focused on environmental rescue gameplay.
+                              I worked on gameplay programming, enemy behavior, game progression, objectives, and interaction systems within a 2D environment.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Game Development</span>
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>2D Top-Down</span>
+                              <span>Enemy Behavior</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://www.youtube.com/watch?v=sFoM5ek2SJ0">Gameplay Video</a>
+                              <a class="project-link" href="https://yeison-munoz.itch.io/mangrove-rescue">Itch.io</a>
+                              <a class="project-link" href="https://github.com/YeyeyMC/ManglarRescue">GitHub</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <article class="card project-card" data-discipline="game development" data-language="c#" data-search="shadow bank unity c# 2d top down puzzle adventure pixel art puzzle mechanics interaction systems">
+                      <img src="./src/shadowbank2.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Project</span>
+                          <h3 style="margin-top: 12px;">Shadow Bank</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Shadow Bank is a 2D top-down puzzle adventure game developed in Unity, where the player must escape a haunted bank by solving environmental puzzles.
+                              I contributed to gameplay programming, puzzle mechanics, player interactions, and pixel art production.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Game Development</span>
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>Puzzle Systems</span>
+                              <span>Pixel Art</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://www.youtube.com/watch?v=IvWieGEWSuQ">Gameplay Video</a>
+                              <a class="project-link" href="https://yeison-munoz.itch.io/shadowbank">Itch.io</a>
+                              <a class="project-link" href="https://github.com/juansecadavid/ShadowBank">GitHub</a>
+                          </div>
+                      </div>
+                  </article>
+
+                  <!--<article class="card project-card" data-discipline="game development" data-language="c#" data-search="critical oxygen unity c# 2d action platformer enemies boss fight checkpoints power ups">
+                      <img src="./src/critical.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Project</span>
+                          <h3 style="margin-top: 12px;">Critical Oxygen</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Critical Oxygen is a 2D action platformer developed in Unity, where the player must escape a failing spaceship while facing enemies, collecting power-ups, and progressing through multiple levels.
+                              This project helped me strengthen my foundations in player mechanics, enemy behavior, checkpoints, boss fights, and level scripting.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Game Development</span>
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>2D Platformer</span>
+                              <span>Enemy AI</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://www.youtube.com/watch?v=gdFfAd8Y8As">Gameplay Video</a>
+                              <a class="project-link" href="https://yeison-munoz.itch.io/critical-oxygen">Itch.io</a>
+                              <a class="project-link" href="https://github.com/YeyeyMC/CriticalOxygen.git">GitHub</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+                  <!--<article class="card project-card" data-discipline="game development" data-language="c#" data-search="unity firebase authentication leaderboard webgl clicker game backend">
+                      <img src="./src/cookie.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Project</span>
+                          <h3 style="margin-top: 12px;">Cookie Clicker Auth System</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              WebGL Unity game integrated with Firebase Authentication and leaderboard systems.
+                              Players can register, log in, and compete for high scores, demonstrating backend integration
+                              and persistent data handling within a simple gameplay loop.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>Firebase Auth</span>
+                              <span>Leaderboard</span>
+                              <span>WebGL</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://yeyeymc.github.io/CookieClickerAuth/">Live Demo</a>
+                              <a class="project-link" href="https://github.com/YeyeyMC/CookieClickerAuth.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/xxUVy0cdXng">Gameplay Video</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+                  <!--<article class="card project-card" data-discipline="software engineering" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming">
+                      <img src="./src/enginex.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Systems Project</span>
+                          <h3 style="margin-top: 12px;">EngineX Space Shooter (C++ Engine)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Custom C++ game engine prototype featuring a space shooter implementation.
+                              Focused on low-level systems, memory management, and component-based architecture,
+                              using smart pointers, object lifecycles, and structured game loop design.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>C++</span>
+                              <span>Game Engine</span>
+                              <span>Memory Management</span>
+                              <span>Architecture</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/WZQcGn83lig">Video Demonstration</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+                  <!--<article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
+                      <img src="./src/tanks.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Systems Project</span>
+                          <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Multiplayer tank prototype developed in Unreal Engine using C++ and Blueprints.
+                              Focused on client-server architecture, movement replication, and basic multiplayer gameplay interactions.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Unreal Engine</span>
+                              <span>C++</span>
+                              <span>Networking</span>
+                              <span>Multiplayer</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/U57NMf9c3gk">Gameplay Video</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+
+                  <!--<article class="card project-card" data-discipline="software tools" data-language="c#" data-search="unity tool editor tool cleanup dev tools project optimization">
+                      <img src="./src/devtool.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Tooling</span>
+                          <h3 style="margin-top: 12px;">Unity Dev Tool (Project Cleaner)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Custom Unity editor tool designed to analyze and remove unused or unnecessary files within a project.
+                              Focused on improving workflow efficiency, project organization, and development productivity.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Unity</span>
+                              <span>C#</span>
+                              <span>Tooling</span>
+                              <span>Editor Scripting</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://github.com/YeyeyMC/DevTools101.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/mgT2rM52v5g">Video Demonstration</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+                  <!--<article class="card project-card" data-discipline="graphics programming" data-language="c#" data-search="unity shaders hlsl shadergraph graphics rendering visual effects">
+                      <img src="./src/shaders.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Graphics</span>
+                          <h3 style="margin-top: 12px;">Shader Showcase (HLSL & Shader Graph)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Collection of custom shaders created using HLSL and Unity Shader Graph,
+                              including visual effects such as emission, environment materials, and stylized rendering techniques.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Unity</span>
+                              <span>HLSL</span>
+                              <span>Shader Graph</span>
+                              <span>Graphics</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://youtu.be/u5-_HR_Wr2Y">Video Demonstration</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+                  <!--<article class="card project-card" data-discipline="mobile development" data-language="kotlin" data-search="android kotlin task manager mobile app crud">
+                      <img src="./src/taskmanager.png" class="project-image" />
+                      <div class="project-body">
+                          <span class="badge">Mobile</span>
+                          <h3 style="margin-top: 12px;">Task Manager App (Android)</h3>
+                          <p style="color: var(--muted); margin-top: 10px;">
+                              Android application built using Kotlin in Android Studio, focused on task management functionality.
+                              Implements CRUD operations, UI navigation, and structured mobile application architecture.
+                          </p>
+
+                          <div class="project-tags">
+                              <span>Kotlin</span>
+                              <span>Android</span>
+                              <span>Mobile Development</span>
+                              <span>CRUD</span>
+                          </div>
+
+                          <div class="project-links">
+                              <a class="project-link" href="https://github.com/YeyeyMC/TaskManagerFinal.git">GitHub</a>
+                              <a class="project-link" href="https://youtu.be/JeIe12sEbzk">Video Demonstration</a>
+                          </div>
+                      </div>
+                  </article>-->
+
+              </div>
+
+              <div class="empty-state" id="emptyState">
+                  No projects match the current filters.
+              </div>
           </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Education</h2>
-        </div>
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Education</h2>
+              </div>
 
-        <div class="education-grid">
-            <article class="card education-item">
-                <article class="card education-item">
-                    <div class="edu-icon">
-                        <img src="src/upblogo2.png" />
+              <div class="education-grid">
+                  <article class="card education-item">
+                      <article class="card education-item">
+                          <div class="edu-icon">
+                              <img src="src/upblogo2.png" />
+                          </div>
+                          <div>
+                              <h3>Digital Entertainment Design Engineering</h3>
+                              <p class="school">Universidad Pontificia Bolivariana (UPB)</p>
+                              <p class="period">January 2021 – May 2025</p>
+                              <p class="details">
+                                  Engineering program focused on interactive experiences, game development, and digital production.
+                                  Developed strong foundations in programming (C#, Unity), game design, real-time systems, and user experience.
+                              </p>
+                              <p class="details">
+                                  Worked on multiple academic and personal projects involving gameplay mechanics, UI systems, and complete game prototypes,
+                                  strengthening both technical and creative problem-solving skills.
+                              </p>
+                          </div>
+                      </article>
+                  </article>
+
+                  <article class="card education-item">
+                      <article class="card education-item">
+                          <div class="edu-icon">
+                              <img src="src/vfslogo.jpg" />
+                          </div>
+                          <div>
+                              <h3>Programming for Games, Web & Mobile</h3>
+                              <p class="school">Vancouver Film School (VFS)</p>
+                              <p class="period">September 2025 – August 2026</p>
+                              <p class="details">
+                                  Intensive 12-month program focused on software development for games and interactive applications.
+                                  Training includes C++, C#, Unity, Unreal Engine, web and mobile development, data structures, and system architecture.
+                              </p>
+                              <p class="details">
+                                  Emphasis on production-level workflows, teamwork, and building complete projects, including a final production
+                                  that showcases advanced programming skills and real-world development practices.
+                              </p>
+                          </div>
+                      </article>
+                  </article>
+              </div>
+          </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Previous Experience</h2>
+              </div>
+
+              <div class="experience-list">
+                  <article class="card experience-item">
+                      <div class="experience-image">
+                          <img src="src/karaokultalogo.jpg" />
+                      </div>
+                      <div>
+                          <div class="experience-top">
+                              <div>
+                                  <h3>Game Developer (Internship)</h3>
+                                  <p class="experience-company">KaraOkulta – Amber Studio</p>
+                              </div>
+                              <div>
+                                  <p class="experience-time">2024</p>
+                                  <p class="experience-location">Remote - Guadalajara, Mexico</p>
+                              </div>
+                          </div>
+
+                          <p class="experience-description">
+                              Contributed to the development of a multiplayer experience in Roblox Studio,
+                              focused on interactive gameplay systems and player engagement.
+                          </p>
+
+                          <ul class="experience-points">
+                              <li>Developed gameplay mechanics and interactive systems using Lua scripting</li>
+                              <li>Worked within an existing project structure and adapted to production workflows</li>
+                              <li>Collaborated with a small development team to implement features and improvements</li>
+                          </ul>
+                      </div>
+                  </article>
+
+                  <article class="card experience-item">
+                      <div class="experience-image">
+                          <img src="src/vfslogo.jpg" />
+                      </div>
+                      <div>
+                          <div class="experience-top">
+                              <div>
+                                  <h3>Gameplay Programmer (Team Project)</h3>
+                                  <p class="experience-company">Vancouver Film School</p>
+                              </div>
+                              <div>
+                                  <p class="experience-time">2025 – 2026</p>
+                                  <p class="experience-location">Vancouver, Canada</p>
+                              </div>
+                          </div>
+
+                          <p class="experience-description">
+                              Worked as part of a development team to build a 3D first-person game in Unity,
+                              focusing on gameplay systems, AI behavior, and interactive mechanics.
+                          </p>
+
+                          <ul class="experience-points">
+                              <li>Implemented enemy AI behavior, gameplay systems, and UI interactions using C#</li>
+                              <li>Designed modular and scalable gameplay logic following clean architecture principles</li>
+                              <li>Collaborated using Git for version control in a team-based production environment</li>
+                              <li>Participated in debugging, testing, and iterative feature development</li>
+                          </ul>
+                      </div>
+                  </article>
+
+                  <article class="card experience-item">
+                      <div class="experience-image">
+                          <img src="src/vfslogo.jpg" />
+                      </div>
+                      <div>
+                          <div class="experience-top">
+                              <div>
+                                  <h3>Lead Gameplay Programmer / Enemy Programmer</h3>
+                                  <p class="experience-company">Vancouver Film School</p>
+                              </div>
+                              <div>
+                                  <p class="experience-time">2026</p>
+                                  <p class="experience-location">Vancouver, Canada</p>
+                              </div>
+                          </div>
+
+                          <p class="experience-description">
+                              Currently working as part of a development team to build a 3D Unity Project
+                              focusing on Combat Systems, Leading programming decisions and Implementing systems optimization.
+                          </p>
+
+                          <ul class="experience-points">
+                              <li>Implementinh Enemy AI Behaviors, Combat and Gameplay Systems using C#</li>
+                              <li>Leading a programming team durinng production phase</li>
+                          </ul>
+                      </div>
+                  </article>
+              </div>
+          </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Skills</h2>
+              </div>
+
+              <div class="skills-grid">
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/gamedevlogo.png" />
+                          </div>
+                          <div>
+                              <h3>Game Development (Unity, Unreal Engine, Roblox Studio)</h3>
+                              <p class="skill-category">Game Development</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Experience building gameplay systems, mechanics, and interactive features using Unity (C#) and basic workflows in Unreal Engine and Roblox Studio (Lua).
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                      <p class="skill-level">Advanced</p>
+                  </article>
+
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/csharplogo.png" />
+                          </div>
+                          <div>
+                              <h3>C# Programming</h3>
+                              <p class="skill-category">Programming Language</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Strong experience developing gameplay systems, UI logic, and modular architectures in Unity using C#.
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                      <p class="skill-level">Advanced</p>
+                  </article>
+
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/cpplogo.png" />
+                          </div>
+                          <div>
+                              <h3>C++ Programming</h3>
+                              <p class="skill-category">Programming Language</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Experience with object-oriented programming, memory management fundamentals, engine programming, and system-level concepts through academic projects.
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                      <p class="skill-level">Intermediate</p>
+                  </article>
+
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/webdevlogo.png" />
+                          </div>
+                          <div>
+                              <h3>Web Development (React, Vue, JavaScript, TypeScript)</h3>
+                              <p class="skill-category">Frontend & Fullstack</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Experience building web applications using modern frameworks, component-based architecture, databases implementation, and API integration.
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+                      <p class="skill-level">Intermediate</p>
+                  </article>
+
+                  <!--<article class="card skill-item">
+                    <div class="skill-top">
+                        <div class="skill-icon">OOP</div>
+                        <div>
+                            <h3>Programming Fundamentals & OOP</h3>
+                            <p class="skill-category">Core Concepts</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Digital Entertainment Design Engineering</h3>
-                        <p class="school">Universidad Pontificia Bolivariana (UPB)</p>
-                        <p class="period">January 2021 – May 2025</p>
-                        <p class="details">
-                            Engineering program focused on interactive experiences, game development, and digital production.
-                            Developed strong foundations in programming (C#, Unity), game design, real-time systems, and user experience.
-                        </p>
-                        <p class="details">
-                            Worked on multiple academic and personal projects involving gameplay mechanics, UI systems, and complete game prototypes,
-                            strengthening both technical and creative problem-solving skills.
-                        </p>
-                    </div>
+                    <p class="skill-description">
+                        Strong understanding of object-oriented programming, clean code principles, and problem-solving through structured logic.
+                    </p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                    <p class="skill-level">Advanced</p>
                 </article>
-            </article>
 
-            <article class="card education-item">
-                <article class="card education-item">
-                    <div class="edu-icon">
-                        <img src="src/vfslogo.jpg" />
+                <article class="card skill-item">
+                    <div class="skill-top">
+                        <div class="skill-icon">Systems</div>
+                        <div>
+                            <h3>Gameplay Systems & Architecture</h3>
+                            <p class="skill-category">Game Programming</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Programming for Games, Web & Mobile</h3>
-                        <p class="school">Vancouver Film School (VFS)</p>
-                        <p class="period">September 2025 – August 2026</p>
-                        <p class="details">
-                            Intensive 12-month program focused on software development for games and interactive applications.
-                            Training includes C++, C#, Unity, Unreal Engine, web and mobile development, data structures, and system architecture.
-                        </p>
-                        <p class="details">
-                            Emphasis on production-level workflows, teamwork, and building complete projects, including a final production
-                            that showcases advanced programming skills and real-world development practices.
-                        </p>
-                    </div>
+                    <p class="skill-description">
+                        Experience designing modular gameplay systems, state-based behaviors, and scalable architecture in Unity projects.
+                    </p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                    <p class="skill-level">Advanced</p>
                 </article>
-            </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Previous Experience</h2>
-        </div>
-
-        <div class="experience-list">
-            <article class="card experience-item">
-                <div class="experience-image">
-                    <img src="src/karaokultalogo.jpg" />
-                </div>
-                <div>
-                    <div class="experience-top">
+                <article class="card skill-item">
+                    <div class="skill-top">
+                        <div class="skill-icon">Git</div>
                         <div>
-                            <h3>Game Developer (Internship)</h3>
-                            <p class="experience-company">KaraOkulta – Amber Studio</p>
-                        </div>
-                        <div>
-                            <p class="experience-time">2024</p>
-                            <p class="experience-location">Remote - Guadalajara, Mexico</p>
+                            <h3>Version Control (Git)</h3>
+                            <p class="skill-category">Workflow</p>
                         </div>
                     </div>
-
-                    <p class="experience-description">
-                        Contributed to the development of a multiplayer experience in Roblox Studio,
-                        focused on interactive gameplay systems and player engagement.
+                    <p class="skill-description">
+                        Experience using Git for collaboration, version tracking, and managing team-based development workflows.
                     </p>
-
-                    <ul class="experience-points">
-                        <li>Developed gameplay mechanics and interactive systems using Lua scripting</li>
-                        <li>Worked within an existing project structure and adapted to production workflows</li>
-                        <li>Collaborated with a small development team to implement features and improvements</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="card experience-item">
-                <div class="experience-image">
-                    <img src="src/vfslogo.jpg" />
-                </div>
-                <div>
-                    <div class="experience-top">
-                        <div>
-                            <h3>Gameplay Programmer (Team Project)</h3>
-                            <p class="experience-company">Vancouver Film School</p>
-                        </div>
-                        <div>
-                            <p class="experience-time">2025 – 2026</p>
-                            <p class="experience-location">Vancouver, Canada</p>
-                        </div>
-                    </div>
-
-                    <p class="experience-description">
-                        Worked as part of a development team to build a 3D first-person game in Unity,
-                        focusing on gameplay systems, AI behavior, and interactive mechanics.
-                    </p>
-
-                    <ul class="experience-points">
-                        <li>Implemented enemy AI behavior, gameplay systems, and UI interactions using C#</li>
-                        <li>Designed modular and scalable gameplay logic following clean architecture principles</li>
-                        <li>Collaborated using Git for version control in a team-based production environment</li>
-                        <li>Participated in debugging, testing, and iterative feature development</li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/gamedevlogo.png" />
-                    </div>
-                    <div>
-                        <h3>Game Development (Unity, Unreal Engine, Roblox Studio)</h3>
-                        <p class="skill-category">Game Development</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Experience building gameplay systems, mechanics, and interactive features using Unity (C#) and basic workflows in Unreal Engine and Roblox Studio (Lua).
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-                <p class="skill-level">Advanced</p>
-            </article>
-
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/csharplogo.png" />
-                    </div>
-                    <div>
-                        <h3>C# Programming</h3>
-                        <p class="skill-category">Programming Language</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Strong experience developing gameplay systems, UI logic, and modular architectures in Unity using C#.
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-                <p class="skill-level">Advanced</p>
-            </article>
-
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/cpplogo.png" />
-                    </div>
-                    <div>
-                        <h3>C++ Programming</h3>
-                        <p class="skill-category">Programming Language</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Experience with object-oriented programming, memory management fundamentals, engine programming, and system-level concepts through academic projects.
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-                <p class="skill-level">Intermediate</p>
-            </article>
-
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/webdevlogo.png" />
-                    </div>
-                    <div>
-                        <h3>Web Development (React, Vue, JavaScript, TypeScript)</h3>
-                        <p class="skill-category">Frontend & Fullstack</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Experience building web applications using modern frameworks, component-based architecture, databases implementation, and API integration.
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-                <p class="skill-level">Intermediate</p>
-            </article>
-
-            <!--<article class="card skill-item">
-        <div class="skill-top">
-            <div class="skill-icon">OOP</div>
-            <div>
-                <h3>Programming Fundamentals & OOP</h3>
-                <p class="skill-category">Core Concepts</p>
-            </div>
-        </div>
-        <p class="skill-description">
-            Strong understanding of object-oriented programming, clean code principles, and problem-solving through structured logic.
-        </p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-        <p class="skill-level">Advanced</p>
-    </article>
-
-    <article class="card skill-item">
-        <div class="skill-top">
-            <div class="skill-icon">Systems</div>
-            <div>
-                <h3>Gameplay Systems & Architecture</h3>
-                <p class="skill-category">Game Programming</p>
-            </div>
-        </div>
-        <p class="skill-description">
-            Experience designing modular gameplay systems, state-based behaviors, and scalable architecture in Unity projects.
-        </p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-        <p class="skill-level">Advanced</p>
-    </article>
-
-    <article class="card skill-item">
-        <div class="skill-top">
-            <div class="skill-icon">Git</div>
-            <div>
-                <h3>Version Control (Git)</h3>
-                <p class="skill-category">Workflow</p>
-            </div>
-        </div>
-        <p class="skill-description">
-            Experience using Git for collaboration, version tracking, and managing team-based development workflows.
-        </p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-        <p class="skill-level">Intermediate</p>
-    </article>-->
-
-
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/mobiledevlogo.png" />
-                    </div>
-                    <div>
-                        <h3>Mobile Development (Kotlin & React Native)</h3>
-                        <p class="skill-category">Mobile Development</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Experience building Android applications using Kotlin and Android Studio, with growing knowledge in cross-platform development using React Native.
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 50%;"></div></div>
-                <p class="skill-level">Intermediate</p>
-            </article>
-
-            <article class="card skill-item">
-                <div class="skill-top">
-                    <div class="skill-icon">
-                        <img src="src/languagelogo.png" />
-                    </div>
-                    <div>
-                        <h3>Languages</h3>
-                        <p class="skill-category">Communication</p>
-                    </div>
-                </div>
-                <p class="skill-description">
-                    Ability to communicate effectively in both professional and collaborative environments.
-                </p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-                <p class="skill-level">Spanish (Native) - English (B2)</p>
-            </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Projects</h2>
-        </div>
-
-        <div class="project-controls">
-          <input type="text" id="searchInput" placeholder="Search by project name or keyword" />
-
-          <select id="disciplineFilter">
-            <option value="all">All Disciplines</option>
-            <option value="game development">Game Development</option>
-            <option value="web development">Web Development</option>
-            <option value="mobile development">Mobile Development</option>
-          </select>
-
-          <select id="languageFilter">
-              <option value="all">All Languages</option>
-              <option value="c#">C#</option>
-              <option value="c++">C++</option>
-              <option value="javascript">JavaScript</option>
-              <option value="typescript">TypeScript</option>
-              <option value="kotlin">Kotlin</option>
-          </select>
-        </div>
-
-        <div class="projects-grid" id="projectsGrid">
-            <article class="card project-card" data-discipline="game development" data-language="c#" data-search="monster route unity c# first person gameplay systems ai ui vfx team project">
-                <img src="./src/monsterroute.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Featured Project</span>
-                    <h3 style="margin-top: 12px;">Monster Route</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Monster Route is a 3D first-person game developed in Unity as part of a team project at Vancouver Film School.
-                        I contributed to gameplay programming, enemy interactions, UI systems, VFX triggers, debugging, and modular gameplay architecture.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Game Development</span>
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>Gameplay Systems</span>
-                        <span>Team Project</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://www.youtube.com/watch?v=UUokJhqqLmg">Gameplay Video</a>
-                        <a class="project-link" href="https://yeison-munoz.itch.io/monster-route">Itch.io</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="web development" data-language="typescript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
-                <img src="./src/telemetry.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Featured Project</span>
-                    <h3 style="margin-top: 12px;">Game Telemetry System (Unity + React)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Full-stack telemetry system that collects and visualizes gameplay data from a Unity WebGL game.
-                        The project integrates Unity, Firebase, React, and Python to track player behavior, generate analytics,
-                        and display real-time graphs and leaderboards through a web interface with admin and player roles.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Unity WebGL</span>
-                        <span>Firebase</span>
-                        <span>Python</span>
-                        <span>Data Visualization</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://yeyeymc.github.io/Pipelines_GameWebApp/">Live Demo</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/Pipelines_GameWebApp.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/e4a6PlRR_fs">Gameplay Video</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="mobile development" data-language="typescript" data-search="react native expo firebase authentication firestore sensors pedometer pokemon api mobile app">
-                <img src="./src/pokewalk.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Mobile Project</span>
-                    <h3 style="margin-top: 12px;">PokeWalk (React Native + Expo)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        PokeWalk is a mobile application built with React Native and Expo that tracks the user's steps and unlocks Pokémon in a personal Pokédex based on walking progress.
-                        The app includes user authentication, persistent account-based data, external API integration, and real-time step tracking using Expo Sensors.
-                    </p>
-
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Each user can register or log in with Firebase Authentication, load their own progress from Firestore, track or pause step detection, and unlock Pokémon based on their activity.
-                        The project demonstrates mobile UI development, sensor access, API calls, Firebase integration, and persistent user data management.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>React Native</span>
-                        <span>Expo</span>
-                        <span>Firebase Auth</span>
-                        <span>Firestore</span>
-                        <span>Expo Sensors</span>
-                        <span>API Integration</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://snack.expo.dev/@yeisonmunoz/pg29_yeisonmunoz_mobiledev_pokewalk_a3">Expo Snack</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/PokeWalk.git">GitHub</a>
-                        <a class="project-link" href="https://youtube.com/shorts/15coSGb2KGc?feature=share">Demo Video</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="lua" data-search="roblox multiplayer lua gameplay systems minigames virtual experience brandcade">
-                <img src="./src/brandcade.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Professional Experience</span>
-                    <h3 style="margin-top: 12px;">Brandcade (Roblox Experience)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Multiplayer Roblox experience developed as part of a professional collaboration with KaraOkulta (Amber Studio).
-                        The project features a virtual shopping-mall environment with interactive minigames and social gameplay systems.
-
-                        Contributed to gameplay implementation and interactive systems using Lua scripting within Roblox Studio,
-                        working within an existing production environment.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Roblox</span>
-                        <span>Lua</span>
-                        <span>Multiplayer</span>
-                        <span>Minigames</span>
-                        <span>Live Project</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://www.roblox.com/es/games/14983485047/BRANDCADE-JETPACK-SIMULATOR">Roblox Experience</a>
-                        <a class="project-link" href="https://linktr.ee/BRANDCADE_KO?">Brandcade Links</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="c#" data-search="mangrove rescue unity c# 2d top down environmental rescue enemy behavior level design">
-                <img src="./src/magrove.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Project</span>
-                    <h3 style="margin-top: 12px;">Mangrove Rescue</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Mangrove Rescue is a 2D top-down Unity game focused on environmental rescue gameplay.
-                        I worked on gameplay programming, enemy behavior, game progression, objectives, and interaction systems within a 2D environment.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Game Development</span>
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>2D Top-Down</span>
-                        <span>Enemy Behavior</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://www.youtube.com/watch?v=sFoM5ek2SJ0">Gameplay Video</a>
-                        <a class="project-link" href="https://yeison-munoz.itch.io/mangrove-rescue">Itch.io</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/ManglarRescue">GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="c#" data-search="shadow bank unity c# 2d top down puzzle adventure pixel art puzzle mechanics interaction systems">
-                <img src="./src/shadowbank2.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Project</span>
-                    <h3 style="margin-top: 12px;">Shadow Bank</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Shadow Bank is a 2D top-down puzzle adventure game developed in Unity, where the player must escape a haunted bank by solving environmental puzzles.
-                        I contributed to gameplay programming, puzzle mechanics, player interactions, and pixel art production.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Game Development</span>
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>Puzzle Systems</span>
-                        <span>Pixel Art</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://www.youtube.com/watch?v=IvWieGEWSuQ">Gameplay Video</a>
-                        <a class="project-link" href="https://yeison-munoz.itch.io/shadowbank">Itch.io</a>
-                        <a class="project-link" href="https://github.com/juansecadavid/ShadowBank">GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="c#" data-search="critical oxygen unity c# 2d action platformer enemies boss fight checkpoints power ups">
-                <img src="./src/critical.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Project</span>
-                    <h3 style="margin-top: 12px;">Critical Oxygen</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Critical Oxygen is a 2D action platformer developed in Unity, where the player must escape a failing spaceship while facing enemies, collecting power-ups, and progressing through multiple levels.
-                        This project helped me strengthen my foundations in player mechanics, enemy behavior, checkpoints, boss fights, and level scripting.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Game Development</span>
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>2D Platformer</span>
-                        <span>Enemy AI</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://www.youtube.com/watch?v=gdFfAd8Y8As">Gameplay Video</a>
-                        <a class="project-link" href="https://yeison-munoz.itch.io/critical-oxygen">Itch.io</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/CriticalOxygen.git">GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="c#" data-search="unity firebase authentication leaderboard webgl clicker game backend">
-                <img src="./src/cookie.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Project</span>
-                    <h3 style="margin-top: 12px;">Cookie Clicker Auth System</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        WebGL Unity game integrated with Firebase Authentication and leaderboard systems.
-                        Players can register, log in, and compete for high scores, demonstrating backend integration
-                        and persistent data handling within a simple gameplay loop.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>Firebase Auth</span>
-                        <span>Leaderboard</span>
-                        <span>WebGL</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://yeyeymc.github.io/CookieClickerAuth/">Live Demo</a>
-                        <a class="project-link" href="https://github.com/YeyeyMC/CookieClickerAuth.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/xxUVy0cdXng">Gameplay Video</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="software engineering" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming">
-                <img src="./src/enginex.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Systems Project</span>
-                    <h3 style="margin-top: 12px;">EngineX Space Shooter (C++ Engine)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Custom C++ game engine prototype featuring a space shooter implementation.
-                        Focused on low-level systems, memory management, and component-based architecture,
-                        using smart pointers, object lifecycles, and structured game loop design.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>C++</span>
-                        <span>Game Engine</span>
-                        <span>Memory Management</span>
-                        <span>Architecture</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/WZQcGn83lig">Video Demonstration</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
-                <img src="./src/tanks.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Systems Project</span>
-                    <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Multiplayer tank prototype developed in Unreal Engine using C++ and Blueprints.
-                        Focused on client-server architecture, movement replication, and basic multiplayer gameplay interactions.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Unreal Engine</span>
-                        <span>C++</span>
-                        <span>Networking</span>
-                        <span>Multiplayer</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/U57NMf9c3gk">Gameplay Video</a>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="card project-card" data-discipline="software tools" data-language="c#" data-search="unity tool editor tool cleanup dev tools project optimization">
-                <img src="./src/devtool.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Tooling</span>
-                    <h3 style="margin-top: 12px;">Unity Dev Tool (Project Cleaner)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Custom Unity editor tool designed to analyze and remove unused or unnecessary files within a project.
-                        Focused on improving workflow efficiency, project organization, and development productivity.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>Tooling</span>
-                        <span>Editor Scripting</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://github.com/YeyeyMC/DevTools101.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/mgT2rM52v5g">Video Demonstration</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="graphics programming" data-language="c#" data-search="unity shaders hlsl shadergraph graphics rendering visual effects">
-                <img src="./src/shaders.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Graphics</span>
-                    <h3 style="margin-top: 12px;">Shader Showcase (HLSL & Shader Graph)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Collection of custom shaders created using HLSL and Unity Shader Graph,
-                        including visual effects such as emission, environment materials, and stylized rendering techniques.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Unity</span>
-                        <span>HLSL</span>
-                        <span>Shader Graph</span>
-                        <span>Graphics</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://youtu.be/u5-_HR_Wr2Y">Video Demonstration</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card project-card" data-discipline="mobile development" data-language="kotlin" data-search="android kotlin task manager mobile app crud">
-                <img src="./src/taskmanager.png" class="project-image" />
-                <div class="project-body">
-                    <span class="badge">Mobile</span>
-                    <h3 style="margin-top: 12px;">Task Manager App (Android)</h3>
-                    <p style="color: var(--muted); margin-top: 10px;">
-                        Android application built using Kotlin in Android Studio, focused on task management functionality.
-                        Implements CRUD operations, UI navigation, and structured mobile application architecture.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Kotlin</span>
-                        <span>Android</span>
-                        <span>Mobile Development</span>
-                        <span>CRUD</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://github.com/YeyeyMC/TaskManagerFinal.git">GitHub</a>
-                        <a class="project-link" href="https://youtu.be/JeIe12sEbzk">Video Demonstration</a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-
-        <div class="empty-state" id="emptyState">
-          No projects match the current filters.
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="contact-grid">
-            <article class="card contact-item">
-                <h3>Email</h3>
-                <p>munozceronyeisonandres@gmail.com</p>
-            </article>
-
-            <article class="card contact-item">
-                <h3>Phone</h3>
-                <p>+1 236 979 4831</p>
-                
-            </article>
-
-            <article class="card contact-item">
-                <h3>WhatsApp Phone</h3>
-                <p>+57 317 539 3846</p>
-            </article>
-
-            <article class="card contact-item">
-                <h3>LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/yeison-andres-munoz-ceron-8078871b0/">LinkedIn Profile</a>
-            </article>
-
-            <article class="card contact-item">
-                <h3>GitHub</h3>
-                <a href="https://github.com/YeyeyMC">GitHub Profile</a>
-            </article>
-        </div>
-      </div>
-    </section>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                    <p class="skill-level">Intermediate</p>
+                </article>-->
+
+
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/mobiledevlogo.png" />
+                          </div>
+                          <div>
+                              <h3>Mobile Development (Kotlin & React Native)</h3>
+                              <p class="skill-category">Mobile Development</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Experience building Android applications using Kotlin and Android Studio, with growing knowledge in cross-platform development using React Native.
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 50%;"></div></div>
+                      <p class="skill-level">Intermediate</p>
+                  </article>
+
+                  <article class="card skill-item">
+                      <div class="skill-top">
+                          <div class="skill-icon">
+                              <img src="src/languagelogo.png" />
+                          </div>
+                          <div>
+                              <h3>Languages</h3>
+                              <p class="skill-category">Communication</p>
+                          </div>
+                      </div>
+                      <p class="skill-description">
+                          Ability to communicate effectively in both professional and collaborative environments.
+                      </p>
+                      <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                      <p class="skill-level">Spanish (Native) - English (B2)</p>
+                  </article>
+
+              </div>
+          </div>
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Contact</h2>
+              </div>
+
+              <div class="contact-grid">
+                  <article class="card contact-item">
+                      <h3>Email</h3>
+                      <p>munozceronyeisonandres@gmail.com</p>
+                  </article>
+
+                  <article class="card contact-item">
+                      <h3>Phone</h3>
+                      <p>+1 236 979 4831</p>
+
+                  </article>
+
+                  <article class="card contact-item">
+                      <h3>WhatsApp Phone</h3>
+                      <p>+57 317 539 3846</p>
+                  </article>
+
+                  <article class="card contact-item">
+                      <h3>LinkedIn</h3>
+                      <a href="https://www.linkedin.com/in/yeison-andres-munoz-ceron-8078871b0/">LinkedIn Profile</a>
+                  </article>
+
+                  <article class="card contact-item">
+                      <h3>GitHub</h3>
+                      <a href="https://github.com/YeyeyMC">GitHub Profile</a>
+                  </article>
+              </div>
+          </div>
+      </section>
   </main>
 
   <footer class="site-footer">
