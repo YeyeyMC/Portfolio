@@ -178,3 +178,52 @@ if (roleTyped) {
         typeLoop();
     }
 }
+
+/* ============================================================
+   CASE STUDY MODAL
+============================================================ */
+const caseModal = document.getElementById('caseStudyModal');
+const caseModalContent = document.getElementById('caseStudyContent');
+const caseModalClose = document.getElementById('caseStudyClose');
+const caseStudyButtons = document.querySelectorAll('.case-study-btn');
+
+function openCaseStudy(templateId) {
+    const template = document.getElementById(templateId);
+    if (!template || !caseModal || !caseModalContent) return;
+
+    caseModalContent.innerHTML = '';
+    caseModalContent.appendChild(template.content.cloneNode(true));
+
+    caseModal.classList.add('open');
+    caseModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+}
+
+function closeCaseStudy() {
+    if (!caseModal || !caseModalContent) return;
+
+    caseModal.classList.remove('open');
+    caseModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    caseModalContent.innerHTML = '';
+}
+
+caseStudyButtons.forEach((btn) => {
+    btn.addEventListener('click', () => openCaseStudy(btn.dataset.caseTarget));
+});
+
+if (caseModalClose) {
+    caseModalClose.addEventListener('click', closeCaseStudy);
+}
+
+if (caseModal) {
+    caseModal.addEventListener('click', (event) => {
+        if (event.target === caseModal) closeCaseStudy();
+    });
+}
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && caseModal && caseModal.classList.contains('open')) {
+        closeCaseStudy();
+    }
+});
