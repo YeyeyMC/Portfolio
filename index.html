@@ -224,7 +224,7 @@
                         </div>-->
                     </template>
 
-                    <article class="card project-card" data-discipline="web development" data-language="typescript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
+                    <article class="card project-card" data-discipline="web development" data-language="javascript" data-search="telemetry unity react python firebase data visualization webgl game analytics">
                         <div class="project-image-wrap">
                             <img src="./src/telemetry.png" class="project-image" alt="Game Telemetry System" />
                         </div>
@@ -339,29 +339,56 @@
                         </div>
                     </template>
 
-                    <article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
-                        <img src="./src/tanks.png" class="project-image" />
+                    <article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks rpc server authoritative health turret">
+                        <div class="project-image-wrap">
+                            <img src="./src/tanks.png" class="project-image" alt="Multiplayer Tanks" />
+                        </div>
                         <div class="project-body">
                             <span class="badge">Systems Project</span>
-                            <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
-                            <p style="color: var(--muted); margin-top: 10px;">
-                                Multiplayer tank prototype developed in Unreal Engine using C++ and Blueprints.
-                                Focused on client-server architecture, movement replication, and basic multiplayer gameplay interactions.
+                            <h3>Multiplayer Tanks (Unreal Networking)</h3>
+                            <p class="project-desc">
+                                Multiplayer tank prototype developed in Unreal Engine using C++, focused on server-authoritative networking,
+                                replicated movement, combat interactions, health, and multiplayer gameplay systems.
                             </p>
 
                             <div class="project-tags">
                                 <span>Unreal Engine</span>
                                 <span>C++</span>
                                 <span>Networking</span>
+                                <span>Replication</span>
                                 <span>Multiplayer</span>
                             </div>
 
                             <div class="project-links">
-                                <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
-                                <a class="project-link" href="https://youtu.be/S8tOgZsegcU">Gameplay Video</a>
+                                <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git" target="_blank" rel="noopener">GitHub</a>
+                                <a class="project-link" href="https://youtu.be/S8tOgZsegcU" target="_blank" rel="noopener">Gameplay Video</a>
+                                <button type="button" class="project-link case-study-btn" data-case-target="case-multiplayer-tanks">Case Study</button>
                             </div>
                         </div>
                     </article>
+
+                    <template id="case-multiplayer-tanks">
+                        <img class="case-study-image" src="./src/tanks.png" alt="Multiplayer Tanks" />
+                        <div class="case-study-header">
+                            <span class="badge">Systems Project</span>
+                            <h2>Multiplayer Tanks (Unreal Networking)</h2>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Overview</h4>
+                            <p>Multiplayer Tanks is an Unreal Engine multiplayer prototype I built to get practical experience with networking and replication in C++. The project uses a client-server architecture where each player controls an independently spawned tank and gameplay state is synchronized across connected players. I focused on implementing the networking side of the project rather than treating multiplayer as an additional layer on top of a single-player game. The prototype includes replicated movement, turret interactions, combat, individual health, UI feedback, and a death state for each tank.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Design & Development</h4>
+                            <p>The movement system was implemented in C++ using a server-authoritative flow: the local player produces movement and turning input, sends the required information to the server through RPCs, and the server applies the movement so the resulting state can be replicated to the other clients. I also configured the project around Unreal's multiplayer spawning flow using a custom GameMode and multiple PlayerStarts instead of manually placing controllable tanks in the level. During development I separated movement responsibilities from turret rotation and combat logic, and worked through issues involving input ownership, replicated actors, RPC parameters, and client/server synchronization. The gameplay layer was then expanded with turret attacks, independent health values, UI for each tank, and a death state so that multiplayer interaction affected actual gameplay rather than only movement.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Challenges & Outcome</h4>
+                            <p>The most difficult part of the project was understanding that code which works locally does not automatically work correctly in a networked environment. I had to debug situations where input was being processed on the wrong machine, actors were duplicated because they were spawned incorrectly, and movement needed to follow the correct client-to-server-to-clients path. I also encountered the kind of small latency and jitter problems that appear once authority and replication are involved. Working through those problems gave me a much clearer understanding of Unreal's networking model, actor ownership, RPCs, replication, spawning, and server authority. The final prototype became a focused demonstration of my ability to work with multiplayer gameplay systems in Unreal Engine and C++.</p>
+                        </div>
+                    </template>
 
                     <article class="card project-card" data-discipline="game development" data-language="lua" data-search="roblox multiplayer lua gameplay systems minigames virtual experience brandcade">
                         <div class="project-image-wrap">
@@ -394,15 +421,16 @@
                         </div>
                     </article>
 
-                    <article class="card project-card" data-discipline="software engineering" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming">
-                        <img src="./src/enginex.png" class="project-image" />
+                    <article class="card project-card" data-discipline="game development" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming smart pointers multithreading components game loop space shooter">
+                        <div class="project-image-wrap">
+                            <img src="./src/enginex.png" class="project-image" alt="EngineX Space Shooter" />
+                        </div>
                         <div class="project-body">
                             <span class="badge">Systems Project</span>
-                            <h3 style="margin-top: 12px;">EngineX Space Shooter (C++ Engine)</h3>
-                            <p style="color: var(--muted); margin-top: 10px;">
-                                Custom C++ game engine prototype featuring a space shooter implementation.
-                                Focused on low-level systems, memory management, and component-based architecture,
-                                using smart pointers, object lifecycles, and structured game loop design.
+                            <h3>EngineX Space Shooter (C++ Engine)</h3>
+                            <p class="project-desc">
+                                Custom C++ game engine project featuring a functional space shooter and focused on engine architecture,
+                                memory management, component systems, smart pointers, multithreading, and structured game-loop design.
                             </p>
 
                             <div class="project-tags">
@@ -410,14 +438,39 @@
                                 <span>Game Engine</span>
                                 <span>Memory Management</span>
                                 <span>Architecture</span>
+                                <span>Systems Programming</span>
                             </div>
 
                             <div class="project-links">
-                                <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git">GitHub</a>
-                                <a class="project-link" href="https://youtu.be/q7NVgPnstIQ">Video Demonstration</a>
+                                <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git" target="_blank" rel="noopener">GitHub</a>
+                                <a class="project-link" href="https://youtu.be/jv_Wsqv3O6Q" target="_blank" rel="noopener">Video Demonstration</a>
+                                <button type="button" class="project-link case-study-btn" data-case-target="case-enginex">Case Study</button>
                             </div>
                         </div>
                     </article>
+
+                    <template id="case-enginex">
+                        <img class="case-study-image" src="./src/enginex.png" alt="EngineX Space Shooter" />
+                        <div class="case-study-header">
+                            <span class="badge">Systems Project</span>
+                            <h2>EngineX Space Shooter (C++ Engine)</h2>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Overview</h4>
+                            <p>EngineX Space Shooter is a C++ project built around a custom game engine rather than a commercial engine such as Unity or Unreal. The project includes a functional space-shooter implementation and gave me direct experience working closer to the systems that a game engine normally manages for the developer. My focus was not only on producing gameplay, but on understanding how engine architecture, object ownership, memory management, component systems, execution flow, and lower-level programming decisions affect the structure of an application.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Design & Development</h4>
+                            <p>The project is organized around a structured game loop and component-based architecture, with engine-level responsibilities separated from the gameplay built on top of them. I worked with C++ concepts such as smart pointers, object lifecycles, ownership, memory management, and multithreading while navigating and extending a codebase where systems depend on one another at a lower level than they typically would inside a commercial engine. Building the space shooter on top of that architecture helped connect the engine code to a concrete use case: instead of studying systems programming only in isolation, I could see how architecture and memory decisions directly influenced gameplay objects, updates, and the overall execution of the game.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4>Challenges & Outcome</h4>
+                            <p>The main challenge was working at a level where many conveniences normally provided by a game engine were exposed as programming responsibilities. Understanding when objects should exist, who owns them, how systems communicate, and how the game loop coordinates work required a different way of thinking from normal gameplay scripting. It also made debugging more dependent on understanding the architecture of the entire program rather than only the feature currently being implemented. EngineX strengthened my foundations in C++, memory and lifetime management, component-oriented design, multithreading concepts, and engine architecture, and it became one of my strongest projects for demonstrating an interest in systems and lower-level game programming.</p>
+                        </div>
+                    </template>
 
                     <template id="case-brandcade">
                         <img class="case-study-image" src="./src/brandcade.png" alt="Brandcade" />
