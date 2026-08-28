@@ -337,11 +337,31 @@
                             <h4>Challenges & Outcome</h4>
                             <p>The main challenge was managing information coming from multiple asynchronous sources while keeping the application's state consistent. Sensor information could change continuously, API information had to be retrieved externally, authentication determined which data should be loaded, and Firestore needed to preserve progression between sessions. These systems also had to behave correctly when tracking was paused, resumed, or when a different user logged into the application. PokeWalk gave me practical experience building a mobile application where the interface is only one layer of a larger system, strengthening my understanding of React Native, application state, Firebase, device capabilities, API integration, and persistent user experiences.</p>
                         </div>
-
-                        <!--<div class="case-video">
-                            <iframe src="https://www.youtube.com/embed/15coSGb2KGc" title="PokeWalk video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>-->
                     </template>
+
+                    <article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
+                        <img src="./src/tanks.png" class="project-image" />
+                        <div class="project-body">
+                            <span class="badge">Systems Project</span>
+                            <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
+                            <p style="color: var(--muted); margin-top: 10px;">
+                                Multiplayer tank prototype developed in Unreal Engine using C++ and Blueprints.
+                                Focused on client-server architecture, movement replication, and basic multiplayer gameplay interactions.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Unreal Engine</span>
+                                <span>C++</span>
+                                <span>Networking</span>
+                                <span>Multiplayer</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
+                                <a class="project-link" href="https://youtu.be/S8tOgZsegcU">Gameplay Video</a>
+                            </div>
+                        </div>
+                    </article>
 
                     <article class="card project-card" data-discipline="game development" data-language="lua" data-search="roblox multiplayer lua gameplay systems minigames virtual experience brandcade">
                         <div class="project-image-wrap">
@@ -374,6 +394,31 @@
                         </div>
                     </article>
 
+                    <article class="card project-card" data-discipline="software engineering" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming">
+                        <img src="./src/enginex.png" class="project-image" />
+                        <div class="project-body">
+                            <span class="badge">Systems Project</span>
+                            <h3 style="margin-top: 12px;">EngineX Space Shooter (C++ Engine)</h3>
+                            <p style="color: var(--muted); margin-top: 10px;">
+                                Custom C++ game engine prototype featuring a space shooter implementation.
+                                Focused on low-level systems, memory management, and component-based architecture,
+                                using smart pointers, object lifecycles, and structured game loop design.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>Game Engine</span>
+                                <span>Memory Management</span>
+                                <span>Architecture</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git">GitHub</a>
+                                <a class="project-link" href="https://youtu.be/q7NVgPnstIQ">Video Demonstration</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <template id="case-brandcade">
                         <img class="case-study-image" src="./src/brandcade.png" alt="Brandcade" />
                         <div class="case-study-header">
@@ -395,13 +440,11 @@
                             <h4>Challenges & Outcome</h4>
                             <p>The biggest challenge was adapting from academic development to a professional remote production environment. For the first time, completing a feature was not only about making the code work; I also had to consider how my implementation affected other developers, follow an existing workflow, communicate progress and problems remotely, coordinate tasks, and work within decisions that had already been established for the project. Brandcade gave me my first practical understanding of professional collaborative development and taught me how to enter an existing project, adapt to another team's workflow, use collaborative and version-control tools, communicate remotely, and deliver gameplay features as part of a larger production.</p>
                         </div>
-
-                        <!--<div class="case-video">
-                            <iframe src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID" title="Brandcade video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>-->
                     </template>
 
-                    <article class="card project-card" data-discipline="game development" data-language="c#" data-search="mangrove rescue unity c# 2d top down environmental rescue enemy behavior level design">
+
+
+                    <!--<article class="card project-card" data-discipline="game development" data-language="c#" data-search="mangrove rescue unity c# 2d top down environmental rescue enemy behavior level design">
                         <div class="project-image-wrap">
                             <img src="./src/magrove.png" class="project-image" alt="Mangrove Rescue" />
                         </div>
@@ -428,35 +471,32 @@
                                 <button type="button" class="project-link case-study-btn" data-case-target="case-mangrove">Case Study</button>
                             </div>
                         </div>
-                    </article>
+                    </article>-->
+                    <!--<template id="case-mangrove">
+                    <img class="case-study-image" src="./src/magrove.png" alt="Mangrove Rescue" />
+                    <div class="case-study-header">
+                        <span class="badge">Project</span>
+                        <h2>Mangrove Rescue</h2>
+                    </div>
 
-                    <template id="case-mangrove">
-                        <img class="case-study-image" src="./src/magrove.png" alt="Mangrove Rescue" />
-                        <div class="case-study-header">
-                            <span class="badge">Project</span>
-                            <h2>Mangrove Rescue</h2>
-                        </div>
+                    <div class="case-section">
+                        <h4>Overview</h4>
+                        <p>Mangrove Rescue is a 2D top-down game developed in Unity during approximately four months of production as a university project. The game focuses on environmental rescue gameplay, with the player progressing through objectives while interacting with enemies and different gameplay systems. I worked primarily on programming, including gameplay mechanics, progression, objectives, interactions, and enemy behavior.</p>
+                    </div>
 
-                        <div class="case-section">
-                            <h4>Overview</h4>
-                            <p>Mangrove Rescue is a 2D top-down game developed in Unity during approximately four months of production as a university project. The game focuses on environmental rescue gameplay, with the player progressing through objectives while interacting with enemies and different gameplay systems. I worked primarily on programming, including gameplay mechanics, progression, objectives, interactions, and enemy behavior.</p>
-                        </div>
+                    <div class="case-section">
+                        <h4>Design & Development</h4>
+                        <p>The project was developed at an earlier stage of my experience as a game developer, which made it an important opportunity to learn how programming decisions interact with art, design, and production planning. My responsibilities included implementing the main gameplay systems and enemy behavior while integrating assets and design changes produced throughout development. Because several disciplines contributed to the project, seemingly small changes to assets or level design could create additional programming or integration work. This gradually made coordination between disciplines an important part of development.</p>
+                    </div>
 
-                        <div class="case-section">
-                            <h4>Design & Development</h4>
-                            <p>The project was developed at an earlier stage of my experience as a game developer, which made it an important opportunity to learn how programming decisions interact with art, design, and production planning. My responsibilities included implementing the main gameplay systems and enemy behavior while integrating assets and design changes produced throughout development. Because several disciplines contributed to the project, seemingly small changes to assets or level design could create additional programming or integration work. This gradually made coordination between disciplines an important part of development.</p>
-                        </div>
-
-                        <div class="case-section">
-                            <h4>Challenges & Outcome</h4>
-                            <p>One of the largest challenges was production planning and asset optimization. At the time, I had less experience defining technical requirements for assets and communicating optimization constraints between programmers and artists. As development progressed, some assets and design decisions required additional changes or rework. Combined with multiple design iterations, this created delays that could have been reduced with clearer technical planning earlier in production. The experience taught me that optimization should not be left until the end of development and that programmers need to communicate technical constraints with other disciplines before assets and systems become deeply integrated. Looking back, the project represents an important step in my development because many of the production and optimization problems I encountered there directly influenced how I later approached larger projects.</p>
-                        </div>
-
-                        <!--<div class="case-video">
-                            <iframe src="https://www.youtube.com/embed/sFoM5ek2SJ0" title="Mangrove Rescue video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>-->
-                    </template>
-
+                    <div class="case-section">
+                        <h4>Challenges & Outcome</h4>
+                        <p>One of the largest challenges was production planning and asset optimization. At the time, I had less experience defining technical requirements for assets and communicating optimization constraints between programmers and artists. As development progressed, some assets and design decisions required additional changes or rework. Combined with multiple design iterations, this created delays that could have been reduced with clearer technical planning earlier in production. The experience taught me that optimization should not be left until the end of development and that programmers need to communicate technical constraints with other disciplines before assets and systems become deeply integrated. Looking back, the project represents an important step in my development because many of the production and optimization problems I encountered there directly influenced how I later approached larger projects.</p>
+                    </div>-->
+                    <!--<div class="case-video">
+                        <iframe src="https://www.youtube.com/embed/sFoM5ek2SJ0" title="Mangrove Rescue video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>-->
+                    <!--</template>-->
                     <!--<article class="card project-card" data-discipline="game development" data-language="c#" data-search="shadow bank unity c# 2d top down puzzle adventure pixel art puzzle mechanics interaction systems">
                         <div class="project-image-wrap">
                             <img src="./src/shadowbank2.png" class="project-image" alt="Shadow Bank" />
@@ -560,53 +600,6 @@
                                 <a class="project-link" href="https://yeyeymc.github.io/CookieClickerAuth/">Live Demo</a>
                                 <a class="project-link" href="https://github.com/YeyeyMC/CookieClickerAuth.git">GitHub</a>
                                 <a class="project-link" href="https://youtu.be/xxUVy0cdXng">Gameplay Video</a>
-                            </div>
-                        </div>
-                    </article>-->
-                    <!--<article class="card project-card" data-discipline="software engineering" data-language="c++" data-search="c++ engine game engine memory management architecture systems programming">
-                        <img src="./src/enginex.png" class="project-image" />
-                        <div class="project-body">
-                            <span class="badge">Systems Project</span>
-                            <h3 style="margin-top: 12px;">EngineX Space Shooter (C++ Engine)</h3>
-                            <p style="color: var(--muted); margin-top: 10px;">
-                                Custom C++ game engine prototype featuring a space shooter implementation.
-                                Focused on low-level systems, memory management, and component-based architecture,
-                                using smart pointers, object lifecycles, and structured game loop design.
-                            </p>
-
-                            <div class="project-tags">
-                                <span>C++</span>
-                                <span>Game Engine</span>
-                                <span>Memory Management</span>
-                                <span>Architecture</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a class="project-link" href="https://github.com/YeyeyMC/EngineXForStudent.git">GitHub</a>
-                                <a class="project-link" href="https://youtu.be/WZQcGn83lig">Video Demonstration</a>
-                            </div>
-                        </div>
-                    </article>-->
-                    <!--<article class="card project-card" data-discipline="game development" data-language="c++" data-search="unreal engine networking multiplayer c++ replication client server tanks">
-                        <img src="./src/tanks.png" class="project-image" />
-                        <div class="project-body">
-                            <span class="badge">Systems Project</span>
-                            <h3 style="margin-top: 12px;">Multiplayer Tanks (Unreal Networking)</h3>
-                            <p style="color: var(--muted); margin-top: 10px;">
-                                Multiplayer tank prototype developed in Unreal Engine using C++ and Blueprints.
-                                Focused on client-server architecture, movement replication, and basic multiplayer gameplay interactions.
-                            </p>
-
-                            <div class="project-tags">
-                                <span>Unreal Engine</span>
-                                <span>C++</span>
-                                <span>Networking</span>
-                                <span>Multiplayer</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a class="project-link" href="https://github.com/Enb4rr/MultiplayerTanksGame.git">GitHub</a>
-                                <a class="project-link" href="https://youtu.be/U57NMf9c3gk">Gameplay Video</a>
                             </div>
                         </div>
                     </article>-->
